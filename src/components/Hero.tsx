@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-12 bg-gold-400" />
             <span className="text-gold-400 text-sm font-ibm tracking-widest uppercase">
-              Адвокатская практика
+              г. Пенза · Пензенская область · вся Россия
             </span>
           </div>
 
@@ -56,9 +56,9 @@ const Hero = () => {
 
           <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg">
             {[
-              { value: "15+", label: "Лет практики" },
-              { value: "500+", label: "Дел выиграно" },
-              { value: "98%", label: "Довольных клиентов" },
+              { value: "5+", label: "Лет практики" },
+              { value: "30+", label: "Дел выиграно" },
+              { value: "вся РФ", label: "География работы" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-gold-400 font-cormorant text-3xl font-semibold">{stat.value}</p>
