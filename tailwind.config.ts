@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1777308192926446336.html"
 	],
 	prefix: "",
 	theme: {
@@ -17,8 +18,35 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			cormorant: ['Cormorant', 'Georgia', 'serif'],
+			ibm: ['IBM Plex Sans', 'sans-serif'],
+		},
 		extend: {
 			colors: {
+				navy: {
+					50: '#f0f4f8',
+					100: '#d9e4ee',
+					200: '#b3c9dd',
+					300: '#7da4c4',
+					400: '#4a7fa9',
+					500: '#2d618e',
+					600: '#1e4d77',
+					700: '#163d61',
+					800: '#0f2d4a',
+					900: '#0a1f34',
+					950: '#060f1a',
+				},
+				gold: {
+					100: '#fdf6e3',
+					200: '#f9e8b0',
+					300: '#f4d070',
+					400: '#e8b84b',
+					500: '#c9952a',
+					600: '#a67820',
+					700: '#845e18',
+				},
+				cream: '#f8f5ef',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
