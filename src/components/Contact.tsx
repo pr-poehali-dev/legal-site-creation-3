@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 const contactInfo = [
   { icon: "Phone", label: "Телефон", value: "+7 (987) 403-23-21" },
   { icon: "Mail", label: "Email", value: "nureewrin@yandex.ru" },
-  { icon: "MapPin", label: "Адрес", value: "г. Уфа, ул. Ленина, 1, офис 305" },
+  { icon: "MapPin", label: "Адрес", value: "г. Пенза, ул. Суворова, д. 172А, Дом адвокатов, 1 этаж, кабинет 4" },
   { icon: "Clock", label: "Режим работы", value: "Пн–Пт: 9:00–18:00" },
 ];
 
