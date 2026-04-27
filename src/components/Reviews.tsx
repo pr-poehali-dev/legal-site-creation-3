@@ -41,7 +41,7 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <section id="reviews" className="py-24 bg-cream">
+    <section id="reviews" className="py-24 bg-navy-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -49,22 +49,22 @@ const Reviews = () => {
             <span className="text-gold-500 text-sm font-ibm tracking-widest uppercase">Отзывы</span>
             <div className="h-px w-12 bg-gold-500" />
           </div>
-          <h2 className="font-cormorant text-4xl md:text-5xl text-navy-900 font-light">
+          <h2 className="font-cormorant text-4xl md:text-5xl text-white font-light">
             Слова клиентов
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((r) => (
-            <div key={r.name} className="bg-white p-8 border border-gray-100 shadow-sm">
+            <div key={r.name} className="bg-navy-800 border border-navy-700 p-8 hover:border-gold-500 transition-colors duration-300">
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: r.stars }).map((_, i) => (
                   <Icon key={i} name="Star" size={14} className="text-gold-400 fill-gold-400" />
                 ))}
               </div>
-              <p className="text-navy-700 font-ibm text-sm leading-relaxed mb-6 italic">«{r.text}»</p>
-              <div className="border-t border-gray-100 pt-4 flex items-center justify-between">
-                <p className="text-navy-900 font-ibm font-semibold text-sm">{r.name}</p>
+              <p className="text-navy-200 font-ibm text-sm leading-relaxed mb-6 italic">«{r.text}»</p>
+              <div className="border-t border-navy-600 pt-4 flex items-center justify-between">
+                <p className="text-white font-ibm font-semibold text-sm">{r.name}</p>
                 <span className="text-navy-400 font-ibm text-xs">{r.category}</span>
               </div>
             </div>
