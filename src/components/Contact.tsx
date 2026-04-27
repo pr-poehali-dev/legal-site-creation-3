@@ -36,6 +36,18 @@ const Contact = () => {
           ))}
         </div>
 
+        <div className="mt-10 overflow-hidden border border-navy-700" style={{ height: 360 }}>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=45.020300%2C53.195100&z=16&pt=45.020300%2C53.195100,pm2rdm&text=%D0%9F%D0%B5%D0%BD%D0%B7%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A1%D1%83%D0%B2%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%2C%20172%D0%90"
+            width="100%"
+            height="360"
+            frameBorder="0"
+            allowFullScreen
+            title="Карта офиса"
+            style={{ border: 0, display: "block" }}
+          />
+        </div>
+
         <div className="mt-10 border border-navy-700 p-8 max-w-2xl">
           <p className="text-gold-400 font-cormorant text-xl font-semibold mb-3">Адвокатская тайна</p>
           <p className="text-navy-300 font-ibm text-sm leading-relaxed">
