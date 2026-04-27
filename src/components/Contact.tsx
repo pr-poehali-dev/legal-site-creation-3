@@ -36,7 +36,24 @@ const Contact = () => {
           ))}
         </div>
 
-        <div className="mt-10 overflow-hidden border border-navy-700" style={{ height: 360 }}>
+        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <a
+            href="tel:+79874032321"
+            className="flex items-center justify-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-ibm font-semibold text-sm px-8 py-4 transition-colors duration-200"
+          >
+            <Icon name="Phone" size={18} />
+            Позвонить: +7 (987) 403-23-21
+          </a>
+          <a
+            href="mailto:nureewrin@yandex.ru"
+            className="flex items-center justify-center gap-3 border border-navy-500 hover:border-gold-400 text-navy-200 hover:text-gold-400 font-ibm text-sm px-8 py-4 transition-colors duration-200"
+          >
+            <Icon name="Mail" size={18} />
+            Написать на почту
+          </a>
+        </div>
+
+        <div className="mt-6 overflow-hidden border border-navy-700" style={{ height: 360 }}>
           <iframe
             src="https://yandex.ru/map-widget/v1/?ll=45.020300%2C53.195100&z=16&pt=45.020300%2C53.195100,pm2rdm&text=%D0%9F%D0%B5%D0%BD%D0%B7%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A1%D1%83%D0%B2%D0%BE%D1%80%D0%BE%D0%B2%D0%B0%2C%20172%D0%90"
             width="100%"
