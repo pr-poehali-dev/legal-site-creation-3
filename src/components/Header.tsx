@@ -55,12 +55,13 @@ const Header = () => {
           ))}
         </nav>
 
-        <button
-          onClick={() => handleNav("#contact")}
-          className="hidden md:block bg-gold-500 hover:bg-gold-400 text-white text-sm font-semibold px-4 py-2 transition-colors duration-200"
+        <a
+          href="tel:+79874032321"
+          className="hidden md:flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-white text-sm font-semibold px-4 py-2 transition-colors duration-200"
         >
-          Записаться
-        </button>
+          <Icon name="Phone" size={15} />
+          +7 (987) 403-23-21
+        </a>
 
         <button
           className="md:hidden text-white"
@@ -81,12 +82,13 @@ const Header = () => {
               {link.label}
             </button>
           ))}
-          <button
-            onClick={() => handleNav("#contact")}
-            className="bg-gold-500 hover:bg-gold-400 text-white text-sm font-semibold px-4 py-2 mt-2 transition-colors"
+          <a
+            href="tel:+79874032321"
+            className="flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-white text-sm font-semibold px-4 py-2 mt-2 transition-colors"
           >
-            Записаться на консультацию
-          </button>
+            <Icon name="Phone" size={15} />
+            Позвонить
+          </a>
         </div>
       )}
     </header>
